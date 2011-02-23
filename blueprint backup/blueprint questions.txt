@@ -1,0 +1,23 @@
+What's the difference between these headers?
+
+php.pdf:
+header( "Content-Type: application/x-ywidget+xml" );
+
+Hello world example:
+header( "Content-Type: application/x-blueprint+xml" );
+
+
+
+
+
+408 242 3916
+
+Inhouse BD-based frontpage.  Will look the same as production environment as of next week (same as SE stage):
+inhouse.m.yahoo.com
+
+Diff locale: uk.inhouse.m.yahoo.com
+
+hotfix.m.yahoo.com (future hotfix server)
+
+
+plantpick

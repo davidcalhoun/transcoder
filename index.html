@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Transcoder</title>
+    <style type="text/css" media="screen">
+        body { font-size: 20px; }
+        textarea { width: 300px; height: 450px; display: block; clear: both; font-size: 85%; }
+        div div { float: left; margin: 0 1em 0 0; }
+        .buttons { width: 200px;  }
+        input { width: 200px; font-size: 105%; }
+        #stats { clear: both; }
+        #stats, #inputStats, #outputStats { font-size: 90%; color: gray; }
+        #inputStats, #outputStats { margin: 0.6em 0 0 0.5em; }
+        p { margin: 1em 0 0 0; font-size: 110%; }
+        p:first-child { margin: 0; }
+        #wrapper { width: 900px; margin: 0 auto; overflow: hidden; }
+        .input { clear: both; }
+        img { float: left; margin: 0.5em 0.5em 0.5em 0; }
+        h1 { float: left; margin: 0.8em 0 0 0em; font-size: 300%; }
+        h2 { margin: 0; }
+        h2, #inputStats, #outputStats { float: left; }
+        #head { margin: 0 auto; width: 500px; float: none; }
+    </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="head">
+        <img src="swissarmy.jpg" width="150" height="150">
+        <h1>Transcoder</h1>
+    </div>
+    <div id="stats">Completion time: 0ms</div>
+
+    <div class="input">
+        <h2>In</h2>
+        <span id="inputStats">0 bytes</span>
+        <textarea id="input" placeholder="Paste or drop desktop files here."></textarea>
+    </div>
+
+    <div class="buttons">
+    <p>Encode</p>
+    <input type="button" id="base64encode" value="base64encode">
+    <input type="button" id="binaryEncode" value="binaryEncode">
+    <input type="button" id="hexEncode" value="hexEncode">
+    <input type="button" id="md5" value="md5">
+    <input type="button" id="zip" value="zip (base64 output)">
+    <p>Decode</p>
+    <input type="button" id="base64decode" value="base64decode">
+    <input type="button" id="binaryDecode" value="binaryDecode">
+    <input type="button" id="hexDecode" value="hexDecode">
+    <input type="button" id="unzip" value="unzip">
+    <p>Web dev</p>
+    <input type="button" id="stripTags" value="stripTags">
+    <input type="button" id="escape" value="URL Encode">
+    <input type="button" id="htmlEscape" value="htmlEntities">
+    <input type="button" id="cssMinifier" value="cssMinifier">
+    <input type="button" id="jsMin" value="jsMin">
+    </div>
+
+    <div>
+        <h2>Out</h2>
+        <span id="outputStats">0 bytes</span>
+        <textarea id="output"></textarea>
+    </div>
+</div>
+
+<br/>
+
+<p>Under the hood: web workers (so your browser doesn't freeze up!)</p>
+
+<p>Wish list: Closure Compiler and YUI Compressor.  Both of these currently require server-side implementations, although Closure Compiler comes close with a service, but it can't be accessed via JavaScript (see <a href="http://code.google.com/p/closure-compiler/issues/detail?id=352&colspec=ID%20Type%20Status%20Priority%20Component%20Owner%20Summary">issue 352</a>).</p>
+
+<br/><br/><br/>
+
+
+<script type="text/javascript" charset="utf-8">
+
+/* pardon the mess - this was the result of an old internal Hack Day! */
+
+var transcode = function() { 
+    var startTime = null,
+        output = document.getElementById("output"),
+        input = document.getElementById("input"),
+        stats = document.getElementById("stats"),
+        inputStats = document.getElementById("inputStats"),
+        outputStats = document.getElementById("outputStats");
+     
+    var callback = function(e) {
+        output.value = e.data;
+        outputStats.innerHTML = e.data.length + " bytes (" + ((output.value.length / input.value.length) * 100).toFixed(0) + "%)";
+    }
+    
+    var workerFactory = function(filename) {
+        startTime = (new Date).getTime();
+        inputStats.innerHTML = input.value.length + " bytes";
+        var worker = new Worker(filename);
+        worker.onmessage = callback;
+        worker.postMessage(input.value);
+        stats.innerHTML = "Completion time: " + ((new Date).getTime() - startTime) + "ms";
+    }
+    
+    // var buttons = document.getElementsByTagName('input');
+    // for(var i=0, length=buttons.length; i < length; i++) {
+    //     buttons[i].onclick = function() { workerFactory(transcode.buttons[i].value) };
+    // }
+    
+    input.onkeyup = function() {
+        // Update byte length
+        inputStats.innerHTML = input.value.length + " bytes";
+    }
+    
+    document.getElementById("htmlEscape").onclick   = function() { workerFactory('htmlEscape.js') };
+    document.getElementById("base64encode").onclick = function() { workerFactory('base64encode.js') };
+    document.getElementById("base64decode").onclick = function() {
+      var html = input.value;
+      var base64Index = html.indexOf('base64,');
+      
+      console.log(base64Index);
+      
+      if(base64Index != -1) {
+        input.value = html.substr(base64Index + 7, html.length);
+      }
+      workerFactory('base64decode.js')
+    };
+    document.getElementById("stripTags").onclick    = function() { workerFactory('stripTags.js') };
+    document.getElementById("binaryEncode").onclick = function() { workerFactory('binaryEncode.js') };
+    document.getElementById("hexEncode").onclick    = function() { workerFactory('hexEncode.js') };
+    document.getElementById("escape").onclick       = function() { workerFactory('escape.js') };
+    document.getElementById("md5").onclick          = function() { workerFactory('md5.js') };
+    document.getElementById("cssMinifier").onclick  = function() { workerFactory('cssMinifier.js') };
+    document.getElementById("jsMin").onclick        = function() { workerFactory('jsMin.js') };
+    document.getElementById("zip").onclick          = function() { workerFactory('zip.js') };  
+    
+    
+    input.ondragenter = input.ondragover = function (e) {
+         e.preventDefault();
+    }
+    
+    input.ondrop = function (e) {
+      e.preventDefault();
+
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        input.value = e.target.result;
+      };
+      reader.readAsDataURL(e.dataTransfer.files[0]);
+    }
+};
+
+document.onload = transcode();
+
+</script>
+
+</body>
+</html>

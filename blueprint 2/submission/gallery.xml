@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery xmlns="http://mobile.yahoo.com/widgets/schema/1.0/gallery/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://mobile.yahoo.com/widgets/schema/1.0/gallery/ http://mobile.yahoo.com/widgets/schema/1.0/gallery/">
+    <description lang="en">A theme that outputs a Wordpress blog in Yahoo! Blueprint Mobile format.</description>
+    <tags>
+        <tag>blog</tag>
+        <tag>wordpress</tag>
+    </tags>
+</gallery>

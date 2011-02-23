@@ -1,0 +1,110 @@
+<useragentswitcher>
+<useragent description="*Internet Explorer*****************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 8 (Win Vista)" useragent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 8 (Win XP)" useragent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 7 (Win Vista)" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 7 (Win XP)" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 7 (Win Storage Server)" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 6 (Win XP)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" appname="Microsoft Internet Explorer" appversion="4.0 (Compatible; MSIE 6.0; Windows NT 5.1)" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 5.5 (Win 2000)" useragent="Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0 )" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 5.5; Windows NT 5.0)" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 5.5 (Win ME)" useragent="Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 5.0 (Win 95)" useragent="Mozilla/4.0 (compatible; MSIE 5.0; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 4.01 (Win 95)" useragent="Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="MSIE 4.0 (Win NT)" useragent="Mozilla/4.0 (compatible; MSIE 4.0; Windows NT)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*FireFox*************************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 2.0.12 (Win Vista)" useragent="Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 2.0 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/2.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.5.0.6 (Fedora Core 5/Linux)" useragent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.6) Gecko/20060808" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.5.0.4 (Debian Linux)" useragent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.4) Gecko/20060508" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.5.0.3 (Mac OSX)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.5.0.1 (Win Vista)" useragent="Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.5 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; nl; rv:1.8) Gecko/20051107 Firefox/1.5" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.4 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8b4) Gecko/20050908 Firefox/1.4" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.0.7 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12) Gecko/20050915 Firefox/1.0.7" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.0.6 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.10) Gecko/20050716 Firefox/1.0.6" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.0.5 (SlackWare/Linux)" useragent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.9) Gecko/20050711 Firefox/1.0.5" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.0.4 (FreeBSD)" useragent="Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.8) Gecko/20050609 Firefox/1.0.4" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 1.0 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; nl-NL; rv:1.7.5) Gecko/20041202 Firefox/1.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="FireFox 0.9.3 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7) Gecko/20040803 Firefox/0.9.3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Opera**************************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 9.1 (Win XP)" useragent="Opera/9.10 (Windows NT 5.1; U; en)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 8.0 (Win 2000)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; en) Opera 8.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 7.6 (Server 2003)" useragent="Opera/7.60 (Windows NT 5.2; U) [en] (IBM EVV/3.0/EAK01AG9/LE)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 7.51 (Win XP)" useragent="Opera/7.51 (Windows NT 5.1; U) [en]" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 7.5 (Win XP)" useragent="Opera/7.50 (Windows XP; U)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 7.5 (Win ME)" useragent="Opera/7.50 (Windows ME; U) [en]" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 4" useragent="Opera/4" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 3" useragent="Opera 3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 2" useragent="Opera 2" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Opera 1" useragent="Opera 1" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Netscape************************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 8.1 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 8.0.1 (Win XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20050519 Netscape/8.0.1" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 7.2 (Win 2000)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.2) Gecko/20050208 Netscape/7.20" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 7.1 (Win 98)" useragent="Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.4) Gecko Netscape/7.1 (ax)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 4.8 (Win XP)" useragent="Mozilla/4.8 [en] (Windows NT 5.1; U)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 4.76 (Win 98)" useragent="Mozilla/4.76 [en] (Win98; U)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 4.5 (Win 98)" useragent="Mozilla/4.5 [en] (Win98; I)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 4.05 (Win 95)" useragent="Mozilla/4.05 [en] (Win95; I)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 3.01 gold (Win 95)" useragent="Mozilla/3.01Gold (Win95; I)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Netscape 2.02 (Win 95)" useragent="Mozilla/2.02E (Win95; U)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Safari**************************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 3.0 (v521)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/521.25 (KHTML, like Gecko) Safari/521.24" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 2.0 (v418.9.1)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/418.9.1 (KHTML, like Gecko) Safari/419.3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 2.0 (v412)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 2.0 (v401)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/401 (KHTML, like Gecko) Safari/401" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.3 (v162)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/162 (KHTML, like Gecko) Safari/162" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.3 (v158)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/158 (KHTML, like Gecko) Safari/158" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.3 (v146)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/146.1 (KHTML, like Gecko) Safari/146" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.2 (v125.8; OSX 10.3.4)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; es) AppleWebKit/125.2 (KHTML, like Gecko) Safari/125.8" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.1 (v100.1; OSX 10.3.2)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; it-it) AppleWebKit/103u (KHTML, like Gecko) Safari/100.1" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v85)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; it-it) AppleWebKit/85 (KHTML, like Gecko) Safari/85" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v74 beta 2)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/74 (KHTML, like Gecko) Safari/74" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v73 beta 2)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/73 (KHTML, like Gecko) Safari/73" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v64 beta)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/64 (KHTML, like Gecko) Safari/64" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v51 update 1.0 beta)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/51 (like Gecko) Safari/51" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Safari 1.0 (v48 public beta)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/48 (like Gecko) Safari/48" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*AOL****************************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 9.0/MSIE 6.0 (Win XP)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 8.0/MSIE 6.0 (Win XP)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; AOL 8.0; Windows NT 5.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 7.0/MSIE 5.5 (Win 98)" useragent="Mozilla/4.0 (compatible; MSIE 5.5; AOL 7.0; Windows 98) " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 6.0/MSIE 5.5 (Win 98)" useragent="Mozilla/4.0 (compatible; MSIE 5.5; AOL 6.0; Windows 98) " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 5.0/MSIE 5.0 (Win 98)" useragent="Mozilla/4.0 (Compatible; MSIE 5.0; AOL 5.0; Windows 98)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 5.0 (OS X)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.0.2) Gecko/20020924 AOL/7.0 " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 5.0 (Mac PPC)" useragent="Mozilla/4.0 (compatible; MSIE 4.01; AOL 5.0; Mac_PPC)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 4.0/MSIE 3.02 (Win 95)" useragent="Mozilla/2.0 (Compatible; MSIE 3.02; AOL 4.0; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 4.0/MSIE 4.01 (Win 95)" useragent="Mozilla/4.0 (Compatible; MSIE 4.01; AOL 4.0; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 4.0 (Mac PPC)" useragent="Mozilla/4.0 (compatible; MSIE 4.01; AOL 4.0; Mac_PPC)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 4.0 (Mac 68k)" useragent="Mozilla/4.0 (compatible; MSIE 4.01; AOL 4.0; Mac_68K)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 4.0/MSIE 3.0 (Win 3.1)" useragent="Mozilla/2.0 (Compatible; MSIE 3.0; AOL 4.0; Windows 3.1)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 3.0/MSIE 3.02 (Win 95)" useragent="Mozilla/2.0 (Compatible; MSIE 3.02; AOL 3.0; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AOL 3.0/MSIE 4.01 (Win 95)" useragent="Mozilla/4.0 (Compatible; MSIE 4.01; AOL 3.0; Windows 95)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Mozilla******************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Mozilla 1.7.8 (Linux)" useragent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050511" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Spiders/Bots*********************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Googlebot 2.1 (New version)" useragent="Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Msnbot 1.0" useragent="msnbot/1.0 ( http://search.msn.com/msnbot.htm)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Msnbot 1.0 Beta (v0.11)" useragent="msnbot/0.11 ( http://search.msn.com/msnbot.htm)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Yahoo Slurp" useragent="Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Ask Jeeves/Teoma" useragent="Mozilla/2.0 (compatible; Ask Jeeves/Teoma)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*RSS Readers*******************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="NewsGator 2.5 (Win XP)" useragent="NewsGator/2.5 (http://www.newsgator.com; Microsoft Windows NT 5.1.2600.0; .NET &#xD;&#xA;CLR 1.1.4322.2032)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Feed Demon 1.6 (Win XP)" useragent="FeedDemon/1.6 (http://www.bradsoft.com/; Microsoft Windows XP)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Bloglines 2.1" useragent="Bloglines/2.1 (http://www.bloglines.com; xx subscribers)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="SharpReader 0.9.6.0 (Win XP)" useragent="SharpReader/0.9.6.0 (.NET CLR 1.1.4322.573; WinNT 5.1.2600.0)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*WAP Devices*******************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Nokia 6630" useragent="Nokia6630/1.0 (2.3.129) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1" appname="Nokia" appversion="1.0" platform="Nokia" vendor="Nokia" vendorsub="Nokia" />
+<useragent description="Nokia 6100" useragent="Nokia6100/1.0 (04.01) Profile/MIDP-1.0 Configuration/CLDC-1.0" appname="" appversion="" platform="" vendor="Nokia6100" vendorsub=""/>
+<useragent description="BlackBerry 8703" useragent="BlackBerry8703e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/189 " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="iPhone (3.0 Mobile" useragent="Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420 (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Toolbars*********************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Google Toolbar 4.0" useragent="Mozilla/4.0 (compatible; GoogleToolbar 4.0.1019.5266-big; Windows XP 5.1; MSIE 6.0.2900.2180)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Hotbar 4.4.2" useragent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Hotbar 4.4.2.0; SV1; .NET CLR 2.0.50727)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="AskBar 3.0" useragent="Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt; AskBar 3.00)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="*Other*********************" useragent="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="iTunes 4.2 (OS X 10.2)" useragent="iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="iTunes 4.7 (OS X 10.2)" useragent="iTunes/4.7 (Macintosh; U; PPC Mac OS X 10.2)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="iTunes 7.1.1 (Mac PPC)" useragent="iTunes/7.1.1 (Macintosh; N; PPC)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Zune 2.0" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; winfx; .NET CLR 1.1.4322; .NET CLR 2.0.50727; Zune 2.0) " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+<useragent description="Facebook" useragent="facebookscraper/1.0(+http://www.facebook.com/sharescraper_help.php)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+</useragentswitcher>
