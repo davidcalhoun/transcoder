@@ -11,9 +11,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }  
   
-body { font-size: 20px; }
+body { font-size: 20px; padding: 0 1em;}
 h1 { float: left; margin: 0.8em 0 0 0em; font-size: 300%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;}
-     
+select {display: block;}
+#in {clear: both;}
+#in, #out {float: left; width: 48%;}
+#out {position: relative; margin-left: 2%;}
+#out img {position: absolute; top: 2.4em; left: 0.1em;}
+#out img[src=''] {display: none;} /* hide empty image output */
+textarea {width: 100%; height: 400px; -webkit-box-sizing: border-box;}
 </style>
 </head>
 
@@ -27,8 +33,17 @@ h1 { float: left; margin: 0.8em 0 0 0em; font-size: 300%; font-family: "Helvetic
 <div id="bd">
   <select>
     <option>...</option>
-    <option value="base64">base64</option>
-    <option value="base64decode">base64 (decode)</option>
+    <option value="base64">Base64</option>
+    <option value="base64decode">Base64 (decode)</option>
+    <option value="escape">Escape</option>
+    <option value="htmlEntities">HTML Entities</option>
+    <option value="stripTags">Strip tags</option>
+    <option value="cssMinifier">CSS Minifier</option>
+    <option value="jsMin">jsMin</option>
+    <option value="closureCompiler">Closure Compiler</option>
+    <option value="md5">MD5</option>
+    <option value="zip">ZIP</option>
+    <option value="qr">QR</option>
   </select>
   
   <div id="in">
@@ -40,6 +55,7 @@ h1 { float: left; margin: 0.8em 0 0 0em; font-size: 300%; font-family: "Helvetic
     <h2>Out</h2>
     <p id="outputStats">0 bytes</p>
     <textarea id="outputText"></textarea>
+    <img id="outputImg">
   </div>
   
   <p>Completion time: <span id="completion">0</span>ms</p>
@@ -66,26 +82,29 @@ document.addEventListener('DOMContentLoaded', function(){
       output      = $('out'),
       inputText   = $('inputText'),
       outputText  = $('outputText'),
-      stats       = $('stats'),
+      completion  = $('completion'),
       inputStats  = $('inputStats'),
       outputStats = $('outputStats'),
       worker      = null;
+      outputImg   = $('outputImg');
   
   var updateOutputText = function(text){
     outputText.value = text;
-    outputStats.innerHTML = text.data.length + " bytes (" + ((outputText.value.length / inputText.value.length) * 100).toFixed(0) + "%)";
+    
+    outputStats.innerHTML = text.length + " bytes (" + ((outputText.value.length / inputText.value.length) * 100).toFixed(0) + "%)";
   }
   
   var workerFactory = function(file, cb){
     startTime = (new Date).getTime();
-    inputStats.innerHTML = inputText.value.length + " bytes";
-    worker = new Worker(file + '.js');
+    inputStats.innerHTML = inputText.value.length;
+    worker = new Worker('scripts/' + file + '.js');
     worker.onmessage = cb;
     worker.postMessage(inputText.value);
-    stats.innerHTML = "Completion time: " + ((new Date).getTime() - startTime) + "ms";
+    completion.innerHTML = ((new Date).getTime() - startTime);
   }
   
   var textCallback = function(e){
+    outputImg.src = '';
     updateOutputText(e.data);
   }
   
@@ -96,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function(){
     var canvasNode = document.createElement('canvas');
     canvasNode.width = canvasNode.height = qr.modules.length * scale;
     canvasNode.id = 'qr';
-    //document.body.appendChild(canvasNode);
     
     var ctx = canvasNode.getContext('2d');
     ctx.fillStyle = 'black';
@@ -109,9 +127,8 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
     
-    var img = document.createElement('img');
-    img.src = canvasNode.toDataURL("image/png");
-    output.parentNode.appendChild(img);
+    outputText.value = '';
+    outputImg.src = canvasNode.toDataURL("image/png");
   }
   
   var addListeners = function(){
