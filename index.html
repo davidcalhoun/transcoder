@@ -41,6 +41,7 @@ textarea {width: 100%; height: 400px; -webkit-box-sizing: border-box;}
     <option value="cssMinifier">CSS Minifier</option>
     <option value="jsMin">jsMin</option>
     <option value="closureCompiler">Closure Compiler</option>
+    <option value="yuiCompressor">YUI Compressor</option>
     <option value="md5">MD5</option>
     <option value="zip">ZIP</option>
     <option value="qr">QR</option>
@@ -141,9 +142,26 @@ document.addEventListener('DOMContentLoaded', function(){
       
       if(value == 'qr') {
         workerFactory(value, imageCallback);
+      } else if(value == 'yuiCompressor') {
+        var url = 'http://davidbcalhoun.com/transcoder/scripts/yuicompressor.php';
+        var params = 'input=' + inputText.value;
+        var http = new XMLHttpRequest();
+        http.open("POST", url, true);
+
+        //Send the proper header information along with the request
+        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        http.onreadystatechange = function() {//Call a function when the state changes.
+        	if(http.readyState == 4 && http.status == 200) {
+        		//alert(http.responseText);
+        		textCallback({data:http.responseText});
+        	}
+        }
+        http.send(params);
+        
       } else if(value == 'closureCompiler') {
         var url = 'http://closure-compiler.appspot.com/compile';
-        var params = 'code_url=' + '&compilation_level=' & 'output_format=text&output_info=compiled_code';
+        var params = 'js_code=' + inputText.value + '&compilation_level=' + 'output_format=text&output_info=compiled_code';
         var http = new XMLHttpRequest();
         http.open("POST", url, true);
 
@@ -154,7 +172,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
         http.onreadystatechange = function() {//Call a function when the state changes.
         	if(http.readyState == 4 && http.status == 200) {
-        		alert(http.responseText);
+        		//alert(http.responseText);
+        		textCallback({data:http.responseText});
         	}
         }
         http.send(params);
